@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn AWS fundamentals - Services, concepts, and free tier information for students">
+    <title>AWS Learning Guide | AWS & GitHub Learning Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">AWS & GitHub Hub</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="aws.html">AWS</a></li>
+                    <li><a href="github.html">GitHub</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Amazon Web Services (AWS)</h1>
+            <p>Master cloud computing with industry-leading services and free tier benefits</p>
+        </div>
+    </section>
+
+    <!-- What is AWS -->
+    <section class="content-section">
+        <div class="container">
+            <h2>What is AWS?</h2>
+            <p>Amazon Web Services (AWS) is a cloud computing platform that provides on-demand computing resources. Instead of owning expensive servers, AWS lets you rent computing power, storage, and databases when you need them.</p>
+            <p><strong>Think of it like this:</strong> AWS is similar to renting an apartment instead of building a house. You get access to powerful infrastructure without the upfront cost or maintenance burden.</p>
+            <p>AWS powers popular websites like Netflix, Instagram, Airbnb, and millions of other applications. Learning AWS prepares you for real-world technology work.</p>
+        </div>
+    </section>
+
+    <!-- Core Concepts -->
+    <section class="content-section" style="background-color: #f5f5f5;">
+        <div class="container">
+            <h2>Core Concepts</h2>
+            
+            <div class="concept-box">
+                <h4>🌍 Regions and Availability Zones</h4>
+                <p><strong>Region:</strong> A geographic area where AWS has data centers. Example: us-east-1 (Virginia), eu-west-1 (Ireland)</p>
+                <p><strong>Availability Zone:</strong> A physical location within a region. Using multiple zones ensures your application stays online if one data center fails.</p>
+            </div>
+
+            <div class="concept-box">
+                <h4>💾 Compute vs Storage vs Database</h4>
+                <p><strong>Compute:</strong> Processing power to run your applications (EC2, Lambda)</p>
+                <p><strong>Storage:</strong> File storage like Google Drive on steroids (S3)</p>
+                <p><strong>Database:</strong> Organized data storage for your application (RDS, DynamoDB)</p>
+            </div>
+
+            <div class="concept-box">
+                <h4>💰 Pay-As-You-Go Pricing</h4>
+                <p>You only pay for what you use. Scaled down a service? Your bill gets smaller. This makes it perfect for students—no surprise charges if you're careful with your free tier limits.</p>
+            </div>
+
+            <div class="concept-box">
+                <h4>🔒 Shared Responsibility Model</h4>
+                <p>AWS secures the infrastructure. You secure your application and data. Think of it like a hotel: they secure the building, you lock your room.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Services -->
+    <section class="content-section">
+        <div class="container">
+            <h2>Essential AWS Services for Beginners</h2>
+            
+            <div class="service-card">
+                <h4>📦 EC2 (Elastic Compute Cloud)</h4>
+                <p><strong>What it is:</strong> Virtual computers in the cloud that you can rent by the hour or minute.</p>
+                <p><strong>Use case:</strong> Running web servers, applications, databases, or any software that needs computational power.</p>
+                <p><strong>Student example:</strong> Rent a small server for $0-10/month to host your portfolio website.</p>
+            </div>
+
+            <div class="service-card">
+                <h4>🗂️ S3 (Simple Storage Service)</h4>
+                <p><strong>What it is:</strong> Object storage service for files, images, videos, backups, and more.</p>
+                <p><strong>Use case:</strong> Storing application files, static website content, backups, and large datasets.</p>
+                <p><strong>Student example:</strong> Store your project files and backups. Free tier includes 5GB of storage.</p>
+            </div>
+
+            <div class="service-card">
+                <h4>🎬 Lambda (Serverless Functions)</h4>
+                <p><strong>What it is:</strong> Run code without managing servers. Upload your function, and AWS handles the rest.</p>
+                <p><strong>Use case:</strong> Processing files, handling API requests, automating tasks, running scheduled jobs.</p>
+                <p><strong>Student example:</strong> Create a function that automatically resizes images when uploaded to S3.</p>
+            </div>
+
+            <div class="service-card">
+                <h4>🗄️ RDS (Relational Database Service)</h4>
+                <p><strong>What it is:</strong> Managed databases (MySQL, PostgreSQL, MariaDB) without server maintenance.</p>
+                <p><strong>Use case:</strong> Storing structured data for web and mobile applications.</p>
+                <p><strong>Student example:</strong> Run a production database for your web application with automatic backups.</p>
+            </div>
+
+            <div class="service-card">
+                <h4>🌐 CloudFront (Content Delivery)</h4>
+                <p><strong>What it is:</strong> Serves your content from locations worldwide, making sites load faster.</p>
+                <p><strong>Use case:</strong> Hosting static sites, delivering images and videos quickly globally.</p>
+                <p><strong>Student example:</strong> Make your portfolio site load in milliseconds worldwide.</p>
+            </div>
+
+            <div class="service-card">
+                <h4>🔐 IAM (Identity and Access Management)</h4>
+                <p><strong>What it is:</strong> Manage who can access what in your AWS account.</p>
+                <p><strong>Use case:</strong> Security, creating multiple users, controlling permissions.</p>
+                <p><strong>Student example:</strong> Create a limited user account for a project partner without giving full access.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Tier -->
+    <section class="content-section" style="background-color: #e8f5e9;">
+        <div class="container">
+            <h2>🎉 AWS Free Tier for Students</h2>
+            <p>AWS offers a free tier for 12 months that's perfect for learning. Here's what you get:</p>
+            
+            <div class="free-tier-grid">
+                <div class="free-tier-item">
+                    <h4>EC2</h4>
+                    <p>750 hours/month of t2.micro instance (one small server)</p>
+                </div>
+                <div class="free-tier-item">
+                    <h4>S3</h4>
+                    <p>5 GB of standard storage</p>
+                </div>
+                <div class="free-tier-item">
+                    <h4>RDS</h4>
+                    <p>750 hours/month of db.t2.micro database instance</p>
+                </div>
+                <div class="free-tier-item">
+                    <h4>Lambda</h4>
+                    <p>1 million free requests per month</p>
+                </div>
+            </div>
+
+            <p style="margin-top: 1.5rem; font-size: 0.95rem; color: #666;">
+                <strong>⚠️ Important:</strong> Stay within free tier limits to avoid charges. Set up billing alerts in your AWS account. Always stop instances when not in use.
+            </p>
+        </div>
+    </section>
+
+    <!-- Getting Started -->
+    <section class="content-section">
+        <div class="container">
+            <h2>Getting Started with AWS</h2>
+            
+            <div class="steps-vertical">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <h4>Create an AWS Account</h4>
+                    <p>Go to aws.amazon.com and sign up. You'll need your email, phone number, and a payment method (for verification, not immediate charges).</p>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <h4>Set Up Billing Alerts</h4>
+                    <p>In your AWS account, enable billing alerts so you get notified if you're approaching charges. Better safe than sorry!</p>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <h4>Explore the Console</h4>
+                    <p>Log in and explore the AWS Management Console. It's overwhelming at first—that's normal. Focus on one service at a time.</p>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <h4>Launch Your First EC2 Instance</h4>
+                    <p>Create a small virtual server. Connect to it and run some commands. This hands-on experience is invaluable.</p>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-number">5</div>
+                    <h4>Deploy a Simple Application</h4>
+                    <p>Take a basic web app (HTML/CSS/JS or Node.js) and deploy it to your EC2 instance. Share the URL with your friends!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="content-section" style="background-color: #f5f5f5;">
+        <div class="container">
+            <h2>Tips for AWS Success</h2>
+            <div class="tips-grid">
+                <div class="tip">
+                    <h4>✅ Read the Documentation</h4>
+                    <p>AWS docs are detailed but great. Don't be afraid to read them. They have examples for every service.</p>
+                </div>
+                <div class="tip">
+                    <h4>✅ Use Free Tier Wisely</h4>
+                    <p>Your free tier is your playground. Experiment, break things, learn from failures. Just don't forget to stop resources.</p>
+                </div>
+                <div class="tip">
+                    <h4>✅ Follow Security Best Practices</h4>
+                    <p>Never hardcode passwords or API keys in your code. Use IAM roles and environment variables.</p>
+                </div>
+                <div class="tip">
+                    <h4>✅ Learn by Doing</h4>
+                    <p>Videos and articles help, but hands-on practice is where real learning happens. Build projects!</p>
+                </div>
+                <div class="tip">
+                    <h4>✅ Check Your Bills Regularly</h4>
+                    <p>Log into your AWS account weekly and check the Billing Dashboard. Awareness prevents surprises.</p>
+                </div>
+                <div class="tip">
+                    <h4>✅ Join Communities</h4>
+                    <p>AWS has forums, subreddits, and Discord communities. Ask questions! Experienced developers love helping.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="content-section">
+        <div class="container">
+            <h2>Ready to Start Your AWS Journey?</h2>
+            <p>You now understand the basics. The next step is hands-on learning. Create your account and start experimenting!</p>
+            <div class="button-group">
+                <a href="index.html" class="btn btn-secondary">Back to Home</a>
+                <a href="resources.html" class="btn btn-primary">Find AWS Resources</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 AWS & GitHub Learning Hub. Created for students, by the community.</p>
+            <p>Not affiliated with Amazon Web Services or GitHub. All trademarks belong to their respective owners.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
